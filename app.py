@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
 import time
 
-#newly developed
+#newly developed model 
 
 
 
