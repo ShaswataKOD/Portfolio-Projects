@@ -13,14 +13,13 @@ This project analyzed crime data in Boston to indentify trends and patterns in o
   * 23 rows were found duplicate which were also dropped
 2)  Data Integration -
   * datasets were merged to create a single large dataset
-## Insights -
-  1) Most common types of crime is larcony and motor vehicle related
-  2) Crimes due to drug abuse ranks 6th in our findings which is still very high for a city
-  3) Most of the Crimes were commited near ports or in the coastal regions
-  4) Crimes rates has significantly dropped throughout the years showing better managment by Police department
-  5) Surprisingly most of the crimes occur between 12pm and 8pm which shows night life is very safe in Boston
-  6) Weedays are more prone than weekendsd
-
+## Further Insights -
+  1) Evening Crime Patterns: Crimes are more frequently committed in the evening hours compared to other times of day, indicating a potential peak 
+     period for criminal activity.
+  2) Yearly Crime Trends: Total recorded crimes were notably higher in 2016 and 2017, suggesting these years experienced elevated crime rates or 
+     improved reporting.
+  3) Weekend Night Crimes: Nighttime crimes are more prevalent on weekends than on weekdays, highlighting a possible link between weekend     
+     activities and increased criminal incidents.
 ## Conclusion and Recommendations -
   * Potential for buildin models to predict crime based on historical data
   * Integrating datasets like socioeconoic and demographic data could possibly enhance anaysis
