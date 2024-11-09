@@ -19,9 +19,9 @@ This project analyzed crime data in Boston to indentify trends and patterns in o
   2) Yearly Crime Trends: Total recorded crimes were notably higher in 2016 and 2017, suggesting these years experienced elevated crime rates or 
      improved reporting.
   3) Weekend Night Crimes: Nighttime crimes are more prevalent on weekends than on weekdays, highlighting a possible link between weekend     
-     activities and increased criminal incidents.
+     activities and increased criminal incidents.     
 ## Conclusion and Recommendations -
-  * Potential for buildin models to predict crime based on historical data
-  * Integrating datasets like socioeconoic and demographic data could possibly enhance anaysis
+  * Potential for building predictive model to predict crime based on historical data
+  * Integrating datasets like socio-econoic and demographic data could possibly enhance anaysis
      
 
