@@ -13,7 +13,7 @@ This repository contains two major projects, each tackling a different aspect of
    - Standardizing data formats 🛠️  
    - Preparing for exploratory data analysis 🔍  
    - Extracting insights on job market trends 💼  
-📌 **Project Link:** [Glassdoor Data Wrangling](./data-wrangling/README.md)
+📌 **Project Link:** [Glassdoor Data Wrangling](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Data%20Wrangling/ReadMe.md)
 
 ---
 ### 2️⃣ **Sentiment Analysis of Tweets using Machine Learning** 🐦💬
