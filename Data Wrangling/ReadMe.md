@@ -57,7 +57,7 @@ This dataset consists of job postings scraped from **Glassdoor**, including cruc
 📬 Got questions or feedback? Let’s connect! 🤝
 - 📧 **Email:** shaswatabiswas707@gmail.com  
 - 💼 **LinkedIn:** [Profile](https://www.linkedin.com/in/shaswata-biswas-1a6837230/)  
-
+- **Project Link:** [Project](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Data%20Wrangling/data-wrangling.ipynb)
 ---
 ## 🌟 Future Enhancements
 🔮 What's next?
