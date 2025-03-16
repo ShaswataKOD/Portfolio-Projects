@@ -35,7 +35,7 @@ This repository contains multiple projects, each tackling a different aspect of 
    - **RFM Analysis:** Categorize customers into loyal, new, and at-risk segments.  
    - **Seasonality Analysis:** Identify peak months and revenue fluctuations.  
    - **Actionable Recommendations:** Develop retention strategies and optimize marketing efforts.  
-📌 **Project Link:** [Customer Insights & Seasonal Trends Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Customer%20Segmentation/ReadMe.md)
+📌 **Project Link:** [Customer Insights & Seasonal Trends Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/Readme.md)
 
 ---
 ## 🚀 How to Use This Repository
