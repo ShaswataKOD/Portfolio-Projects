@@ -3,7 +3,7 @@
 Welcome to my **Data Science & Machine Learning Projects Repository**! 🚀 This repository showcases my expertise in **data preprocessing, machine learning models, and text analytics** through real-world datasets and advanced techniques. Each project is designed to demonstrate **data-driven insights, predictive modeling, and natural language processing**.
 
 ## 📌 Projects Overview
-This repository contains two major projects, each tackling a different aspect of **data science**:
+This repository contains multiple projects, each tackling a different aspect of **data science**:
 
 ### 1️⃣ **Data Wrangling - Glassdoor Job Postings** 🏢📊
 🔹 **Objective:** Clean, preprocess, and optimize job postings data from **Glassdoor** for analysis.  
@@ -27,6 +27,17 @@ This repository contains two major projects, each tackling a different aspect of
 📌 **Project Link:** [Sentiment Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Project1/README.md)
 
 ---
+### 3️⃣ **Customer Insights & Seasonal Trends: Analysis & Recommendations** 📈🛒
+🔹 **Objective:** Identify top revenue-contributing customers, analyze seasonal trends, and evaluate customer retention using the **UK Retail Store Dataset (2010–2011)**.  
+🔹 **Tech Stack:** Excel, Python, Pandas, Matplotlib, Seaborn  
+🔹 **Key Features:**
+   - **Customer Segmentation:** Classify customers based on revenue, purchase frequency, and AOV.  
+   - **RFM Analysis:** Categorize customers into loyal, new, and at-risk segments.  
+   - **Seasonality Analysis:** Identify peak months and revenue fluctuations.  
+   - **Actionable Recommendations:** Develop retention strategies and optimize marketing efforts.  
+📌 **Project Link:** [Customer Insights & Seasonal Trends Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Customer%20Segmentation/ReadMe.md)
+
+---
 ## 🚀 How to Use This Repository
 1️⃣ Clone the repository:
    ```bash
@@ -34,7 +45,7 @@ This repository contains two major projects, each tackling a different aspect of
    ```
 2️⃣ Navigate to the project folder of your choice:
    ```bash
-   cd data-wrangling  # or cd sentiment-analysis
+   cd data-wrangling  # or cd sentiment-analysis or cd customer-segmentation
    ```
 3️⃣ Install dependencies:
    ```bash
@@ -52,3 +63,4 @@ This repository contains two major projects, each tackling a different aspect of
 🖥️ **GitHub:** [GitHub](https://github.com/ShaswataKOD/DATA-PROJECTS/)  
 
 If you find these projects valuable, give this repository a ⭐ and join me on this exciting journey of mastering data science and machine learning! 🚀💡 Let's innovate together! 😃
+
