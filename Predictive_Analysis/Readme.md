@@ -39,7 +39,7 @@ Findings from the analysis reveal:
 - **Average Order Value (AOV):** £490.87
 
 💡 **Recommendation:** Implement loyalty programs, personalized offers, upselling, and cross-selling strategies.
-![High Value Customers](revenuetime.png)
+![High Value Customers](Predictive_Analysis/revenue time.png)
 
 
 #### 📊 Customer Segmentation
