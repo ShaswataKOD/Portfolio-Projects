@@ -46,7 +46,7 @@ This repository contains multiple projects, each tackling a different aspect of 
    - Identified unusual sales behavior to detect **potential fraud or data inconsistencies**.  
    - Visualized outliers and deviations in **historical sales trends**.  
    - Optimized model parameters for improved **detection accuracy**.  
-📌 **Project Link:** [Anomaly Detection in Sales Data]()
+📌 **Project Link:** [Anomaly Detection in Machine parts](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Anomaly%20Detection/ReadMe.md)
 
 ---
 ## 🚀 How to Use This Repository
