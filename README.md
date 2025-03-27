@@ -38,6 +38,17 @@ This repository contains multiple projects, each tackling a different aspect of 
 📌 **Project Link:** [Customer Insights & Seasonal Trends Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/Readme.md)
 
 ---
+### 4️⃣ **Anomaly Detection in Sales Data** 🔎📊
+🔹 **Objective:** Detect unusual sales patterns and identify outliers in revenue trends using **unsupervised learning**.  
+🔹 **Tech Stack:** Python, Scikit-Learn, Isolation Forest, Local Outlier Factor, Matplotlib, Seaborn  
+🔹 **Key Features:**
+   - Implemented **Isolation Forest & LOF** for anomaly detection.  
+   - Identified unusual sales behavior to detect **potential fraud or data inconsistencies**.  
+   - Visualized outliers and deviations in **historical sales trends**.  
+   - Optimized model parameters for improved **detection accuracy**.  
+📌 **Project Link:** [Anomaly Detection in Sales Data]()
+
+---
 ## 🚀 How to Use This Repository
 1️⃣ Clone the repository:
    ```bash
@@ -62,5 +73,4 @@ This repository contains multiple projects, each tackling a different aspect of 
 📧 **Email:** shaswatabiswas707@gmail.com  
 🖥️ **GitHub:** [GitHub](https://github.com/ShaswataKOD/DATA-PROJECTS/)  
 
-If you find these projects valuable, give this repository a ⭐ and join me on this exciting journey of mastering data science and machine learning! 🚀💡 Let's innovate together! 😃
 
