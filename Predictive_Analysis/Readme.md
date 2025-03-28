@@ -39,6 +39,7 @@ Findings from the analysis reveal:
 - **Average Order Value (AOV):** £490.87
 
 💡 **Recommendation:** Implement loyalty programs, personalized offers, upselling, and cross-selling strategies.
+
 ![High Value Customers](Predictive_Analysis/revenue time.png)
 
 
@@ -56,9 +57,12 @@ Five distinct customer segments identified:
 - **Monthly Sales Distribution:**
   - Sales peak in **November (15% of revenue)** and **December (11%)** due to promotions and holiday demand.
   - Low sales in **May and June (5% each)** suggest seasonal downturns.
+
 ![Monthly Revenue Trends](Predictive_Analysis/monthly rev.png)
 - **Revenue Trends:** Cyclical pattern with peaks during November and December.
 - **Average Order Value (AOV):** Highest in November and December due to bulk orders.
+  
+![Average Value Over Time](Predictive_Analysis/AOV time.png)
 
 ### 📢 Recommendations
 1. **Leverage High-Demand Months (November & December):** Boost marketing efforts, run targeted promotions, and encourage repeat purchases. 📣
