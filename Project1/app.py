@@ -2,159 +2,77 @@ import streamlit as st
 import pickle
 import re
 import string
+import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
-import nltk
-import time
-import altair as alt
 
-
-
-
-# Download NLTK stopwords and punkt for tokenization
+# Download NLTK resources
 nltk.download('stopwords')
 nltk.download('punkt')
 
-# Initialize PorterStemmer and stopwords
+# Initialize NLP components
 porter = PorterStemmer()
 stop_words = set(stopwords.words('english'))
 
-# Load the pre-trained Logistic Regression model
+# Load model and vectorizer
 with open('ln_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-# Load the TfidfVectorizer
 with open('vectorizer.pkl', 'rb') as file:
     vectorizer = pickle.load(file)
 
-# Function to preprocess and vectorize text input
+# Text preprocessing function
 def preprocess_and_vectorize(text):
-    # Lowercase the text
     text = text.lower()
-    
-    # Remove links, special characters (@, #), and punctuation
-    text = re.sub(r'http\S+|www.\S+', '', text)  
-    text = re.sub(r'@\w+', '', text)             # Remove @ symbol
-    text = re.sub(r'#\w+', '', text)             # Remove # symbol
-    text = text.translate(str.maketrans('', '', string.punctuation))  # Remove punctuation
-    
-    # Tokenize the text
+    text = re.sub(r'http\S+|www.\S+', '', text)
+    text = re.sub(r'[@#]\w+', '', text)
+    text = text.translate(str.maketrans('', '', string.punctuation))
     tokens = word_tokenize(text)
-    
-    # Remove stopwords
-    tokens = [word for word in tokens if word not in stop_words]
-    
-    # Stemming
-    tokens = [porter.stem(word) for word in tokens]
-    
-    # Join the tokens back into a single string
+    tokens = [porter.stem(word) for word in tokens if word not in stop_words]
     cleaned_text = ' '.join(tokens)
-    
-    # Transform the text into a numerical vector
     vectorized_text = vectorizer.transform([cleaned_text])
-    
-    return vectorized_text
+    return vectorized_text, tokens
 
-# Streamlit app title
+# Streamlit UI
 st.set_page_config(page_title="Sentiment Analysis App", layout="wide")
 
-# Custom CSS for styling
 st.markdown("""
-<style>
-    body {
-        background-color: #f9f9f9;  /* Light background color */
-    }
-    .title {
-        text-align: center;
-        font-size: 3rem;
-        color: #FF6347;  /* Tomato color */
-        font-family: 'Comic Sans MS', cursive, sans-serif;
-        text-shadow: 2px 2px #ffcccb;  /* Soft shadow */
-    }
-    .subtitle {
-        text-align: center;
-        font-size: 1.5rem;
-        color: #4682B4;  /* Steel Blue color */
-        font-family: 'Arial', sans-serif;
-        margin-bottom: 30px;
-        font-style: italic;  /* Italic style */
-    }
-    .text-area {
-        border-radius: 10px;
-        border: 2px solid #FF6347;  /* Tomato color */
-        padding: 10px;
-        font-size: 1.2rem;
-        font-family: 'Courier New', Courier, monospace;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        margin: auto;
-    }
-    .btn {
-        background-color: #FF6347;  /* Tomato color */
-        color: white;
-        font-size: 1.5rem;
-        border: none;
-        border-radius: 5px;
-        padding: 12px 24px;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
-        display: block;
-        margin: 0 auto;  /* Center the button */
-    }
-    .btn:hover {
-        background-color: #ff4500;  /* Darker tomato color on hover */
-    }
-    .footer {
-        text-align: center;
-        font-size: 1rem;
-        color: #555;
-        margin-top: 40px;
-        font-family: 'Arial', sans-serif;
-    }
-</style>
+    <h1 style='text-align: center; color: #FF6347;'>✨ Sentiment Analysis App ✨</h1>
+    <h3 style='text-align: center; color: #4682B4;'>Analyze text sentiment in real-time & batch mode!</h3>
 """, unsafe_allow_html=True)
 
-# Add a header and subtitle
-st.markdown('<h1 class="title">✨ Sentiment Analysis App ✨</h1>', unsafe_allow_html=True)
-st.markdown('<h3 class="subtitle">Analyze the sentiment of your text and see if it\'s positive or negative!</h3>', unsafe_allow_html=True)
+# Real-time Sentiment Scoring
+user_input = st.text_area("📝 Type your text:", "", height=150, key="input_text")
 
-# Text input from the user
-user_input = st.text_area("📝 Enter your text:", "", height=150)
+if user_input:
+    processed_input, tokens = preprocess_and_vectorize(user_input)
+    prediction = model.predict(processed_input)[0]
+    score = model.predict_proba(processed_input)[0]
+    sentiment = "Positive" if prediction >= 0.5 else "Negative"
+    st.markdown(f"**Sentiment:** {sentiment} ({max(score):.2f} confidence)")
+    
+    # Keyword Highlighting
+    important_words = [word for word in tokens if word in vectorizer.get_feature_names_out()]
+    highlighted_text = " ".join([f"<span style='color:green;font-weight:bold'>{w}</span>" if w in important_words else w for w in tokens])
+    st.markdown(f"**Important words:** {highlighted_text}", unsafe_allow_html=True)
 
-# Style the text area using CSS
-st.markdown("""
-<style>
-    div[data-baseweb="textarea"] {
-        border-radius: 10px;
-        border: 2px solid #FF6347;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
-</style>
-""", unsafe_allow_html=True)
+# Batch Processing (File Upload)
+st.markdown("---")
+st.subheader("📂 Upload a file for batch sentiment analysis")
+uploaded_file = st.file_uploader("Upload a .txt file", type=["txt"])
+if uploaded_file:
+    text_data = uploaded_file.read().decode("utf-8").splitlines()
+    results = []
+    for line in text_data:
+        vec_text, _ = preprocess_and_vectorize(line)
+        pred = model.predict(vec_text)[0]
+        conf = max(model.predict_proba(vec_text)[0])
+        results.append((line, "Positive" if pred >= 0.5 else "Negative", conf))
+    
+    st.write("### Results:")
+    for text, sentiment, conf in results:
+        st.write(f"**{sentiment} ({conf:.2f} confidence):** {text}")
 
-# Button to make predictions
-if st.button("🔍 Predict Sentiment", key="predict_btn", help="Click to analyze the sentiment!"):
-    # Show a spinner while processing
-    with st.spinner("🔄 Analyzing..."):
-        time.sleep(1)  # Simulate a slight delay
-        # Check if user input is not empty
-        if user_input.strip():
-            # Preprocess and vectorize the user input
-            processed_input = preprocess_and_vectorize(user_input)
-            
-            # Use the model to make predictions (Logistic Regression outputs 0 or 1)
-            prediction = model.predict(processed_input)
-            score = model.predict_proba(processed_input)  # Get prediction probabilities
-            
-            # Display the prediction result with score
-            if prediction[0] >= 0.5:
-                st.success(f"🌟 The sentiment is **positive** with a score of **{score[0][1]:.2f}**.")
-            else:
-                st.error(f"💔 The sentiment is **negative** with a score of **{score[0][0]:.2f}**.")
-        else:
-            st.warning("⚠️ Please enter some text for analysis.")
-
-# Add a footer
-st.markdown("<div class='footer'>Made with ❤️ using Streamlit</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>Made with ❤️ using Streamlit</div>", unsafe_allow_html=True)
