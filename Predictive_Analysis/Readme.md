@@ -58,7 +58,8 @@ Five distinct customer segments identified:
   - Sales peak in **November (15% of revenue)** and **December (11%)** due to promotions and holiday demand.
   - Low sales in **May and June (5% each)** suggest seasonal downturns.
 
-![Monthly Revenue Trends](Predictive_Analysis/monthly rev.png)
+![Monthly Revenue Trends](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/monthly%20rev.png)
+
 - **Revenue Trends:** Cyclical pattern with peaks during November and December.
 - **Average Order Value (AOV):** Highest in November and December due to bulk orders.
   
