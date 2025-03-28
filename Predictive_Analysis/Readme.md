@@ -40,7 +40,7 @@ Findings from the analysis reveal:
 
 💡 **Recommendation:** Implement loyalty programs, personalized offers, upselling, and cross-selling strategies.
 
-![High Value Customers](Predictive_Analysis/revenue time.png)
+![High Value Customers](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/revenue%20time.png)
 
 
 #### 📊 Customer Segmentation
