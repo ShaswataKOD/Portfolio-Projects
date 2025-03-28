@@ -62,7 +62,7 @@ Five distinct customer segments identified:
 - **Revenue Trends:** Cyclical pattern with peaks during November and December.
 - **Average Order Value (AOV):** Highest in November and December due to bulk orders.
   
-![Average Value Over Time](Predictive_Analysis/AOV time.png)
+![Average Value Over Time](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/AOV%20time.png)
 
 ### 📢 Recommendations
 1. **Leverage High-Demand Months (November & December):** Boost marketing efforts, run targeted promotions, and encourage repeat purchases. 📣
