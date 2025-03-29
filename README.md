@@ -42,17 +42,7 @@ This repository contains multiple projects, each tackling a different aspect of 
    - Optimized model parameters for improved **detection accuracy**.  
 📌 **Project Link:** [Anomaly Detection in Machine Parts](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Anomaly%20Detection/ReadMe.md)  
 
----
-
-### 4️⃣ **Data Wrangling - Glassdoor Job Postings** 🏢📊  
-🔹 **Objective:** Clean, preprocess, and optimize job postings data from **Glassdoor** for analysis.  
-🔹 **Tech Stack:** Python, Pandas, NumPy, Matplotlib, Seaborn  
-🔹 **Key Features:**  
-   - Handling missing data and duplicates ✅  
-   - Standardizing data formats 🛠️  
-   - Preparing for exploratory data analysis 🔍  
-   - Extracting insights on job market trends 🏋️  
-📌 **Project Link:** [Glassdoor Data Wrangling](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Data%20Wrangling/ReadMe.md)  
+---  
 
 ---
 
