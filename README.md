@@ -24,7 +24,8 @@ This repository contains multiple projects, each tackling a different aspect of 
    - Applying **text preprocessing techniques** (stemming, tokenization) 🔤  
    - Training a **Logistic Regression model** for sentiment classification 🤖  
    - Achieving **78% accuracy** with optimized hyperparameters 🏆  
-📌 **Project Link:** [Sentiment Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Project1/README.md)
+📌 **Project Link:** [Sentiment Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Project1/README.md)  
+🌐 **Live Deployment:** [Try It Here!](https://sentiment-analysis-tn72.onrender.com)  
 
 ---
 ### 3️⃣ **Customer Insights & Seasonal Trends: Analysis & Recommendations** 📈🛒
@@ -72,5 +73,3 @@ This repository contains multiple projects, each tackling a different aspect of 
 💼 **LinkedIn:** [My Profile](https://www.linkedin.com/in/shaswata-biswas-1a6837230/)  
 📧 **Email:** shaswatabiswas707@gmail.com  
 🖥️ **GitHub:** [GitHub](https://github.com/ShaswataKOD/DATA-PROJECTS/)  
-
-
