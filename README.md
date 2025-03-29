@@ -28,7 +28,7 @@ This repository contains multiple projects, each tackling a different aspect of 
    - Training a **Logistic Regression model** for sentiment classification 🤖  
    - Achieving **78% accuracy** with optimized hyperparameters 🏆  
 📌 **Project Link:** [Sentiment Analysis](https://github.com/ShaswataKOD/Portfolio-Projects/tree/main/Sentiment-Analysis)  
-🌍 **Live Deployment:** [Try it here](https://your-deployment-link.com)  
+🌍 **Live Deployment:** [Try it here](https://sentiment-analysis-tn72.onrender.com)  
 
 ---
 
