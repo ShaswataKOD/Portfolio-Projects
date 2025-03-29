@@ -10,7 +10,8 @@ This project leverages **Machine Learning (ML) techniques** to classify the sent
 3️⃣ **Data Preprocessing**  
 4️⃣ **Model Training & Evaluation**  
 5️⃣ **Results & Insights**  
-6️⃣ **Conclusion & Future Scope**  
+6️⃣ **Deployment**  
+7️⃣ **Conclusion & Future Scope**  
 
 ---
 ## 🚀 1. Installation & Setup
@@ -30,6 +31,13 @@ This project leverages **Machine Learning (ML) techniques** to classify the sent
 ## 📊 2. Data Definition
 🔹 The dataset contains **1.6 million** labeled tweets with **7 structured columns**.  
 🔹 The target column **'labels'** is well-balanced, ensuring fair model training.  
+🔹 The dataset structure includes:  
+
+| Column Name | Description |
+|-------------|------------|
+| `id`        | Unique tweet ID |
+| `text`      | The tweet content |
+| `label`     | Sentiment (0 = Negative, 1 = Positive) |
 
 ---
 ## 🛠️ 3. Data Preprocessing
@@ -40,8 +48,13 @@ Given the large dataset, **preprocessing efficiency** is a priority:
 ✅ **Insignificant duplicate values** removed to optimize performance.  
 ✅ **Key features used**:
    - 📌 `labels` (Target variable, binary classification)
-   - 📌 `text_data` (Tweet content for analysis)
-✅ **Stemming applied** to retain the inherent meaning of words while speeding up processing.  
+   - 📌 `text_data` (Tweet content for analysis)  
+✅ **Text Preprocessing Includes**:
+   - Lowercasing  
+   - Removing punctuations & special characters  
+   - Removing stopwords  
+   - Stemming for better generalization  
+
 ✅ **TF-IDF Vectorization** used for feature extraction, ensuring robust encoding of textual data.  
 
 ---
@@ -55,10 +68,24 @@ For binary classification, a **Logistic Regression model** was selected:
 ## 🎯 5. Model Evaluation & Results
 🏆 **Achieved an impressive accuracy of 78%** 🎯  
 📌 **Precision and recall scores were well-balanced**, minimizing false classifications.  
+📊 **Performance Metrics**:
+
+| Metric        | Score |
+|--------------|------|
+| Accuracy     | 78%  |
+| Precision    | 76%  |
+| Recall       | 77%  |
+| F1-Score     | 76.5% |
+
 📊 Visualized results with **confusion matrix** and **classification reports** to analyze performance.  
 
 ---
-## 🔮 6. Conclusion & Future Scope
+## 🌐 6. Live Deployment  
+🚀 **Try out the Sentiment Analysis Model here:**  
+🔗 **[Live Demo](https://sentiment-analysis-tn72.onrender.com)**  
+
+---
+## 🔮 7. Conclusion & Future Scope
 ✅ The **Logistic Regression model** effectively classifies sentiment with **high accuracy**.  
 ✅ **Future Improvements:**
    - Upgrade to **multi-class classification** for a nuanced sentiment analysis.
@@ -67,4 +94,3 @@ For binary classification, a **Logistic Regression model** was selected:
 
 ---
 ### 🚀 Want to contribute? Feel free to fork the repo and enhance the model! ⭐ Let’s build something impactful together!
-
