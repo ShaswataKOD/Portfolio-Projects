@@ -1,81 +1,84 @@
-## 📊 Customer Insights & Seasonal Trends: Analysis & Recommendations
+# 🛍️ Customer Segmentation & Purchase Behavior Analysis
 
-### 🔍 Project Overview
-This project focuses on understanding customer segmentation and purchase behavior to identify top revenue-generating customers, analyze seasonal trends, and improve customer retention. Using **RFM Analysis (Recency, Frequency, Monetary Value)**, customers are classified into various segments to provide actionable insights for enhancing marketing strategies and boosting profitability. 📈
+## 📊 Project Overview
+This project dives deep into understanding customer purchase behavior using the UK Online Retail Dataset (2010-2011). The aim is to identify valuable customer segments, understand seasonal sales trends, and provide actionable strategies for increasing revenue and retention.
 
-### 🎯 Objectives
-1. **Customer Segmentation:** Identify high-value customers using revenue contribution, purchase frequency, and average order value (AOV).
-2. **Behavioral Analysis:** Categorize customers into loyal, new, and inactive segments using RFM Analysis.
-3. **Seasonality Analysis:** Identify sales peaks and fluctuations in revenue and AOV. 📅
+## 🧠 Skills Demonstrated
+- Data Cleaning & Preprocessing (handling missing data, duplicates)
+- RFM Analysis for Customer Segmentation
+- Exploratory Data Analysis (EDA)
+- Time Series Analysis & Seasonality Trends
+- Data Visualization (Matplotlib, Seaborn)
+- Business Recommendations & Strategic Thinking
 
-### 📂 Data Description
-The dataset used is the **UK Retail Store Dataset (2010–2011)**, containing online retail transactional data with the following columns:
-- **InvoiceNo:** Unique transaction identifier.
-- **StockCode:** Unique product code.
-- **Description:** Product description.
-- **Quantity:** Number of units sold per transaction.
-- **InvoiceDate:** Transaction date and time.
-- **UnitPrice:** Price per unit of the product.
-- **CustomerID:** Unique customer identifier.
-- **Country:** Country of the customer.
+## ⚙️ Tools & Technologies Used
+- **Language:** Python (Pandas, NumPy)
+- **Visualization:** Seaborn, Matplotlib
+- **Analysis:** RFM, GroupBy Aggregations
+- **Environment:** Jupyter Notebook
 
-### 📝 Executive Summary
-Findings from the analysis reveal:
-- Revenue concentration among top customers.
-- High churn risk from At-Risk and Lost segments.
-- Revenue peaks during November and December due to holiday demand.
+## 📁 Project Structure
+| Folder/File | Description |
+|-------------|-------------|
+| `Retail_Data.csv` | Raw transactional data |
+| `customer_analysis.ipynb` | Main notebook for EDA and segmentation |
+| `images/` | Saved plots and visualizations |
+| `README.md` | Project overview and findings |
 
-### 📌 Customer Behavior & Segmentation Report
-#### 📈 Top 10% Revenue-Contributing Customers
-- Contribute approximately **52% of total revenue**.
-- Highest revenue contributor: **Customer 14911 (£126,774.57)**.
-- Top 5 customers contribute **£366,996.75 (11% of total revenue)**.
+## 📂 Data Description
+- **Dataset:** UK Online Retail Dataset (Dec 2010–Dec 2011)
+- **Rows:** 541,909
+- **Columns:** InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
-💡 **Insight:** Revenue is heavily concentrated among a few customers, making them critical for profitability.
+## 🧹 Data Cleaning & Preprocessing
+- Removed missing Customer IDs (~20% of rows)
+- Converted `InvoiceDate` to datetime format
+- Created new variables: `TotalPrice = Quantity * UnitPrice`
 
-#### 💰 High-Value Segment Analysis
-- **Total Revenue (Top 10% Customers):** £3,321,754.32
-- **Average Purchase Frequency:** 20 orders per customer.
-- **Average Order Value (AOV):** £490.87
+## 📌 Customer Behavior & Segmentation Report
+### 🎯 RFM Analysis
+- **Recency:** Days since last purchase
+- **Frequency:** Number of transactions
+- **Monetary:** Total money spent
 
-💡 **Recommendation:** Implement loyalty programs, personalized offers, upselling, and cross-selling strategies.
+### 📊 Segments Identified:
+- **Champions:** High recency, high frequency, high spenders
+- **Loyal Customers:** Frequent buyers with decent monetary value
+- **Potential Loyalists:** New customers with recent activity
+- **At Risk:** Haven't purchased in a while
+- **Lost:** Inactive for a long time
 
-![High Value Customers](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/revenue%20time.png)
+## 🧾 Summary of Key Insights
+- 🏆 **Top 10% of customers contribute 52% of total revenue**, suggesting high revenue concentration.
+- ⚠️ **29% of customers are At-Risk or Lost**, indicating a high churn risk but also opportunity for recovery.
+- 📈 **Sales peak in November & December** due to seasonal promotions, while May–June see downturns.
+- 🛍️ **Average Order Value (AOV)** is highest during peak months, implying bulk or high-value purchases.
+- 💡 **5 customer segments** identified — with Loyal and Regular customers being key targets for retention and revenue growth.
 
+## 📈 Seasonality & AOV Trends
+- **Revenue spikes** in Nov-Dec (Christmas promotions)
+- **Low seasons** observed in summer months (May–June)
+- **AOV increases** significantly in Q4
 
-#### 📊 Customer Segmentation
-Five distinct customer segments identified:
-1. **Regular Customers (39.32%)** - Consistent buyers with moderate frequency and spending.
-2. **New Customers (28.45%)** - Recently acquired, showing potential for retention.
-3. **At-Risk Customers (21.91%)** - Previously valuable customers showing inactivity; high churn risk.
-4. **Lost Customers (7.25%)** - Likely churned; mostly one-time buyers.
-5. **Loyal Customers (3.06%)** - High-frequency, high-value customers; critical for long-term profitability.
+## 🔎 Churn Rate Analysis
+- **Churn rate calculated using customer inactivity (90+ days)**
+- Identified customer loss patterns over quarters
+- RFM segments "Lost" and "At Risk" correlate highly with churn
 
-💡 **Key Insight:** High churn risk (29.16%) from At-Risk and Lost segments, but potential revenue recovery opportunity if effectively re-engaged.
+## 🌍 Purchase Behavior Across Regions
+- Highest revenue from **United Kingdom** (home base)
+- B2B vs B2C segmentation observed by invoice volume and AOV
 
-### 📅 Seasonality Analysis
-- **Monthly Sales Distribution:**
-  - Sales peak in **November (15% of revenue)** and **December (11%)** due to promotions and holiday demand.
-  - Low sales in **May and June (5% each)** suggest seasonal downturns.
+## 🎯 Recommendations
+1. **Loyalty Program:** Reward top-tier segments like Champions and Loyal Customers.
+2. **Win-Back Campaigns:** Target "At Risk" customers with discounts and reminders.
+3. **Seasonal Promotions:** Boost marketing in Q4 and low seasons to even out revenue.
+4. **Bulk Order Incentives:** Encourage high-volume B2B customers with pricing strategies.
 
-![Monthly Revenue Trends](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/monthly%20rev.png)
+## 🔮 Future Work
+- Apply clustering algorithms (e.g., K-Means) to validate RFM-based segments.
+- Predict churn using classification models.
+- Build a dashboard using Tableau or Power BI for real-time monitoring.
 
-- **Revenue Trends:** Cyclical pattern with peaks during November and December.
-- **Average Order Value (AOV):** Highest in November and December due to bulk orders.
-  
-![Average Value Over Time](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/AOV%20time.png)
-
-### 📢 Recommendations
-1. **Leverage High-Demand Months (November & December):** Boost marketing efforts, run targeted promotions, and encourage repeat purchases. 📣
-2. **Mitigate Low Sales Periods (May & June):** Offer special discounts, bundles, and collaborate with suppliers. 🛒
-3. **Implement Loyalty Programs:** Reward high-value customers with personalized offers and exclusive deals. 🎁
-4. **Re-engage At-Risk Customers:** Use promotions, tailored communications, and exclusive offers to recover lost revenue. 🔄
-
-### 📝 Conclusion
-- **Retention Strategies:** Loyalty programs and targeted marketing are crucial for revenue sustainability.
-- **Revenue Recovery:** Re-engaging At-Risk and Lost segments can boost profitability.
-- **Seasonal Marketing:** Focus on peak months while mitigating low-demand periods.
-- **Segment-Specific Strategies:** Personalized approaches for different customer segments.
-
-🔥 **Takeaway:** By understanding customer segments and seasonal trends, businesses can enhance their marketing efforts and improve customer retention. 🚀
+---
 
