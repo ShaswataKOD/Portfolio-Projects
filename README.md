@@ -32,18 +32,6 @@ This repository contains multiple projects, each tackling a different aspect of 
 
 ---
 
-### 3️⃣ **Anomaly Detection in Sales Data** 🔎📊  
-🔹 **Objective:** Detect unusual sales patterns and identify outliers in revenue trends using **unsupervised learning**.  
-🔹 **Tech Stack:** Python, Scikit-Learn, Isolation Forest, Local Outlier Factor, Matplotlib, Seaborn  
-🔹 **Key Features:**  
-   - Implemented **Isolation Forest & LOF** for anomaly detection.  
-   - Identified unusual sales behavior to detect **potential fraud or data inconsistencies**.  
-   - Visualized outliers and deviations in **historical sales trends**.  
-   - Optimized model parameters for improved **detection accuracy**.  
-📌 **Project Link:** [Anomaly Detection in Machine Parts](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Anomaly%20Detection/ReadMe.md)  
-
----  
-
 ---
 
 ## 🚀 How to Use This Repository  
