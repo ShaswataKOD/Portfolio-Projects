@@ -56,17 +56,3 @@ An interactive chatbot built with **Streamlit** and **Groq API**, enabling blazi
 
 ---
 
-## 👨‍💻 How to Use This Repository  
-
-Explore each project by navigating to its folder. Example:  
-```bash
-cd sentiment-analysis
-jupyter notebook
-pip install -r requirements.txt
-
-
-💙 Connect With Me
-💼 LinkedIn
-📧 Email: shaswatabiswas707@gmail.com
-🖥️ GitHub : https://github.com/ShaswataKOD/Portfolio-Projects/edit/main/README.md
-“Exploring AI by building. Learning by doing.” 💡
