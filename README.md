@@ -27,7 +27,7 @@ Welcome to my **Data Science & Machine Learning Projects Repository**! 📊 This
    - Trained a **Logistic Regression** model  
    - Achieved **78% accuracy** with hyperparameter tuning  
 📌 [View Project](https://github.com/ShaswataKOD/Portfolio-Projects/tree/main/Sentiment-Analysis)  
-🌍 [Live Demo](https://sentiment-analysis-tn72.onrender.com)
+🌍 [Live Demo](https://sentiment-analysis-gyrk9txgxoffjwv7bcnyvj.streamlit.app/)
 
 ---
 
@@ -46,6 +46,7 @@ An interactive chatbot built with **Streamlit** and **Groq API**, enabling blazi
 
 #### 🌐 Try It Out  
 👉 [Live Demo](https://grochat-707.streamlit.app/) — Upload a file, ask questions, and get context-aware answers instantly! 🧾✨
+📌 [View Project](https://github.com/ShaswataKOD/Portfolio-Projects/tree/main/Groq_Chat)
 
 #### 🔧 Powered By  
 - **Groq API** for ultra-fast LLM responses  
