@@ -1,63 +1,72 @@
 # 🚀 Mastering Data Science & Machine Learning: Real-World Projects  
 
-Welcome to my **Data Science & Machine Learning Projects Repository**! 🚀 This repository showcases my expertise in **data preprocessing, machine learning models, and text analytics** through real-world datasets and advanced techniques. Each project is designed to demonstrate **data-driven insights, predictive modeling, and natural language processing**.  
-
-## 📌 Projects Overview  
-This repository contains multiple projects, each tackling a different aspect of **data science**:  
+Welcome to my **Data Science & Machine Learning Projects Repository**! 📊 This repo features a variety of projects showcasing my expertise in **data analysis**, **machine learning**, **text analytics**, and **LLM-based applications**. Each project is designed to deliver real-world impact through **data-driven insights**, **predictive modeling**, and **natural language processing**.
 
 ---
 
-### 1️⃣ **Customer Insights & Seasonal Trends: Analysis & Recommendations** 📈🛂  
-🔹 **Objective:** Identify top revenue-contributing customers, analyze seasonal trends, and evaluate customer retention using the **UK Retail Store Dataset (2010–2011)**.  
+## 📌 Projects Overview
+
+### 1️⃣ **Customer Insights & Seasonal Trends: Analysis & Recommendations** 📈🛍️  
+🔹 **Objective:** Identify high-value customers, uncover seasonal sales trends, and improve customer retention using the **UK Retail Store Dataset (2010–2011)**.  
 🔹 **Tech Stack:** Excel, Python, Pandas, Matplotlib, Seaborn  
 🔹 **Key Features:**  
-   - **Customer Segmentation:** Classify customers based on revenue, purchase frequency, and AOV.  
-   - **RFM Analysis:** Categorize customers into loyal, new, and at-risk segments.  
-   - **Seasonality Analysis:** Identify peak months and revenue fluctuations.  
-   - **Actionable Recommendations:** Develop retention strategies and optimize marketing efforts.  
-📌 **Project Link:** [Customer Insights & Seasonal Trends Analysis](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/Readme.md)  
+   - Customer segmentation based on revenue, frequency, and AOV  
+   - RFM Analysis to classify customer behavior  
+   - Seasonality & peak-month identification  
+   - Actionable retention and marketing strategies  
+📌 [View Project](https://github.com/ShaswataKOD/DATA-PROJECTS/blob/main/Predictive_Analysis/Readme.md)
 
 ---
 
 ### 2️⃣ **Sentiment Analysis of Tweets using Machine Learning** 🐦💬  
-🔹 **Objective:** Classify sentiment behind tweets using **ML-based text analysis**.  
-🔹 **Tech Stack:** Python, NLTK, Pandas, Scikit-Learn, TF-IDF Vectorizer  
+🔹 **Objective:** Perform sentiment classification on tweets using ML-based text analytics  
+🔹 **Tech Stack:** Python, NLTK, Pandas, Scikit-learn, TF-IDF  
 🔹 **Key Features:**  
-   - Handling **1.6M+ tweets** efficiently 📊  
-   - Applying **text preprocessing techniques** (stemming, tokenization) 🔠  
-   - Training a **Logistic Regression model** for sentiment classification 🤖  
-   - Achieving **78% accuracy** with optimized hyperparameters 🏆  
-📌 **Project Link:** [Sentiment Analysis](https://github.com/ShaswataKOD/Portfolio-Projects/tree/main/Sentiment-Analysis)  
-🌍 **Live Deployment:** [Try it here](https://sentiment-analysis-tn72.onrender.com)  
+   - Processing over **1.6M tweets**  
+   - Preprocessing: Tokenization, stemming, stopword removal  
+   - Trained a **Logistic Regression** model  
+   - Achieved **78% accuracy** with hyperparameter tuning  
+📌 [View Project](https://github.com/ShaswataKOD/Portfolio-Projects/tree/main/Sentiment-Analysis)  
+🌍 [Live Demo](https://sentiment-analysis-tn72.onrender.com)
 
 ---
 
----
+### 3️⃣ **💬 Chat with Open Source LLMs — Powered by Groq ⚡️**  
+An interactive chatbot built with **Streamlit** and **Groq API**, enabling blazing-fast conversations with open-source LLMs like **LLaMA**, **Mistral**, and **Gemma**.  
 
-## 🚀 How to Use This Repository  
-1️⃣ Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/data-science-projects.git
-   ```  
-2️⃣ Navigate to the project folder of your choice:  
-   ```bash
-   cd data-wrangling  # or cd sentiment-analysis or cd customer-segmentation
-   ```  
-3️⃣ Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```  
-4️⃣ Open the Jupyter Notebook and explore the project:  
-   ```bash
-   jupyter notebook
-   ```  
+> 🎓 Built as part of my internship training, this project explores how **RAG** (Retrieval-Augmented Generation) and **LangChain** can be used to answer natural language questions from **uploaded PDFs and DOCX files**.
 
----
+#### 🌟 Highlights
 
-## 💙 Connect With Me  
-💼 **LinkedIn:** [My Profile](https://www.linkedin.com/in/shaswata-biswas-1a6837230/)  
-📧 **Email:** shaswatabiswas707@gmail.com  
-🖥️ **GitHub:** [GitHub](https://github.com/ShaswataKOD/DATA-PROJECTS/)  
+- 🧠 Chat with powerful open-source LLMs  
+- 📄 Upload documents (PDF/DOCX) and query them  
+- 🔍 RAG pipeline using **LangChain** for document Q&A  
+- ⚡ High-speed inference with **Groq API**  
+- 🎨 Simple UI with Streamlit  
+
+#### 🌐 Try It Out  
+👉 [Live Demo](https://grochat-707.streamlit.app/) — Upload a file, ask questions, and get context-aware answers instantly! 🧾✨
+
+#### 🔧 Powered By  
+- **Groq API** for ultra-fast LLM responses  
+- **LangChain** for RAG pipeline and retrieval  
+- **Streamlit** for web deployment  
+
+> _Ask your documents anything. Built with ❤️ during hands-on AI exploration._
 
 ---
 
+## 👨‍💻 How to Use This Repository  
+
+Explore each project by navigating to its folder. Example:  
+```bash
+cd sentiment-analysis
+jupyter notebook
+pip install -r requirements.txt
+
+
+💙 Connect With Me
+💼 LinkedIn
+📧 Email: shaswatabiswas707@gmail.com
+🖥️ GitHub : https://github.com/ShaswataKOD/Portfolio-Projects/edit/main/README.md
+“Exploring AI by building. Learning by doing.” 💡
