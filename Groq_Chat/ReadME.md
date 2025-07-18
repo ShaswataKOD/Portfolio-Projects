@@ -2,7 +2,7 @@
 
 Welcome to **LLM Chat Interface** — a fast, interactive chatbot built with **Streamlit** and **Groq API**, enabling real-time conversations with cutting-edge open-source LLMs like LLaMA, Mistral, and Gemma! 🚀
 
-> 🛠️ Developed as part of my internship training, this project explores real-world use of LLMs, document-based Q&A, and RAG pipelines via LangChain.
+> 🛠️ Developed as part of my internship training, this project explores real-world use of LLMs, document-based Q&A via LangChain.
 
 ---
 
@@ -51,7 +51,7 @@ Powered by a **LangChain-based RAG pipeline** that retrieves relevant context an
 
 ## 🛠️ Deployment
 
-Deployed on **Streamlit Cloud** for easy public access. You can also adapt and deploy it on platforms like Hugging Face Spaces or Render. API keys are managed securely via environment variables.
+Deployed on **Streamlit Cloud** for easy public access. You can also adapt and deploy it on platforms like Hugging Face Spaces or Render. API keys are managed securely via streamlit secrets.
 
 ---
 
