@@ -73,4 +73,7 @@ Promote digital payments which have a higher full-payment rate. Incentivize onli
 ## 💬 Conclusion  
 This dashboard delivers actionable insights by transforming raw sales data into a high-impact visual reporting tool. Built for operational managers and senior leadership alike, it supports quick, informed decision-making across multiple aspects of retail operations.
 
+## Link to the Dashboard:
+https://github.com/ShaswataKOD/Portfolio-Projects/blob/main/Customer_Sales/Sales_data.pdf
+
 > **"Bringing numbers to life — one dashboard at a time."** 🎯📊
