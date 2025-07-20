@@ -62,15 +62,17 @@ The dataset is stored in **Google Sheets/CSV format**, ideal for practical busin
 
 ## 💡 Recommendations  
 
-1. **Push Top-Selling Products**: Double down on inventory and marketing for Brake Pads and Cycle Tyres — they drive the most sales volume.  
+### 1. Improve Cash Payment Collections  
+With 33.33% of cash payments being partial or unpaid, consider offering cash incentives or follow-up reminders to improve collection efficiency.
 
-2. **Improve Cash Payment Collections**: With 33.33% of cash payments being partial or unpaid, consider offering cash incentives or follow-up reminders.  
+### 2. Engage Regular Customers More  
+Since regulars contribute ~2x more than dokandaars, build loyalty programs or exclusive offers to retain and upsell to them.
 
-3. **Engage Regular Customers More**: Since they contribute ~2x more than dokandaars, build loyalty programs to retain and upsell.  
+### 3. Target Slow Days Strategically  
+Use dips in the trendline to schedule special discounts, in-store events, or targeted ads to boost traffic on slow days.
 
-4. **Target Slow Days Strategically**: Use dips in the trendline to plan special discounts or social media promotions.  
-
-5. **Optimize Payment Modes**: Encourage online payments, which show better full-payment behavior. Possibly offer small discounts or cashback.  
+### 4. Optimize Payment Modes  
+Encourage online transactions — they show a higher rate of full payments. Consider cashback offers or digital loyalty rewards.
 
 ---
 
