@@ -1,7 +1,7 @@
 # 📊 Dynamic Retail Sales Dashboard – Real Store Insights 💼🛍️
 
 ## 🧠 Executive Summary  
-This dashboard distills complex retail data into clear, actionable intelligence. With ₹21.6K in total revenue, ₹5.34K in just today’s sales, and top-performing products like Brake Pads and Cycle Tyres, it reveals where the business truly thrives. Regular customers contribute nearly twice the revenue of dokandaars, while digital payments outperform cash in full-payment rates (76.92% vs 66.67%). From sales dips to customer trends, this visual tool empowers decision-makers to act fast, optimize operations, and turn everyday numbers into strategic wins.
+This dashboard distills complex retail data into clear, actionable intelligence. With ₹21.6K in total revenue and top-performing products like Brake Pads and Cycle Tyres, it reveals where the business truly thrives. Regular customers contribute nearly twice the revenue of dokandaars, while digital payments outperform cash in full-payment rates (76.92% vs 66.67%). From sales dips to customer trends, this visual tool empowers decision-makers to act fast, optimize operations, and turn everyday numbers into strategic wins.
 
 ---
 
