@@ -15,7 +15,7 @@ Help new freelancers maximize their earnings and identify high-value opportuniti
 | **Category**   | `Category_ID`, `Category_Name`, `Sub_Category_Name`                                                       | Maps projects to categories and subcategories, providing context for analysis and insights.                          |
 
 ## ERD
-<img src="ERD1.png" alt="Entity_Relation_diagram" width="500"/>
+<img src="ERD1.png" alt="Entity_Relation_diagram" width="3000" height ="1000"/>
 
 
 
