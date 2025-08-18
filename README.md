@@ -56,26 +56,6 @@ It offers a visual overview of **sales trends, payment behavior, product perform
 
 ---
 
-### 4️⃣ **💬 Chat with Open Source LLMs — Powered by Groq ⚡️**  
-An interactive chatbot built using **Streamlit** and **Groq API**, enabling lightning-fast conversations with open-source LLMs like **LLaMA**, **Mistral**, and **Gemma**.
-
-> 🎓 Developed during my internship training to explore **LangChain**, **RAG**, and **document-based Q&A** with uploaded PDFs and DOCX files.
-
-#### 🌟 Highlights:
-- 🧠 Chat with open-source LLMs  
-- 📄 Upload documents & ask context-aware questions  
-- 🔍 RAG pipeline powered by LangChain  
-- ⚡ Ultra-fast responses using Groq  
-- 🎨 Streamlit for clean frontend
-
-#### 🌐 Try It Out  
-👉 [Live Demo](https://grochat-707.streamlit.app/) — Upload a file, ask questions, and get instant answers!  
-📌 [View Project](https://github.com/ShaswataKOD/Portfolio-Projects/tree/main/Groq_Chat)
-
-> _Ask your documents anything. Built with ❤️ during hands-on AI exploration._
-
----
-
 ## 💙 Connect With Me  
 - 💼 [LinkedIn](https://www.linkedin.com/in/shaswata-biswas-1a6837230/)  
 - 📧 Email: shaswatabiswas707@gmail.com  
